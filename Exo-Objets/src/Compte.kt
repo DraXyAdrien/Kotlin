@@ -21,5 +21,14 @@ class Compte {
         return balance
     }
 
+    fun retirer(montant:Double):Double{
+        var montant:Double = this.Solde - montant
+        return montant
+    }
+
+    fun deposer(montant:Double):Double{
+        var montant:Double = this.Solde + montant
+        return montant
+    }
 
 }

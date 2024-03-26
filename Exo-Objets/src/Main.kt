@@ -1,5 +1,8 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
+import java.time.LocalTime
+
+
 fun main() {
 
     //val personne = Personne()
@@ -9,7 +12,20 @@ fun main() {
     //print(location.montantTotal())
 
 
-    val compte = Compte("Mickaël", 154.0)
-    println(compte.Solde)
+    //val compte = Compte("Mickaël", 154.0)
+    //println(compte.Solde)
+
+    print("Numéro de matricule : ")
+    var Matricule:Int = readln().toInt()
+    print("Nom : ")
+    var Nom:String = readln().toString()
+    print("Prénom : ")
+    var Prénom:String = readln().toString()
+    print("Année d'embauche : ")
+    var anneeEmbauche:Int = readln().toInt()
+    print("Salaire : ")
+    var Salaire:Double = readln().toDouble()
+    val Employe = Employe(Matricule,Nom,Prénom,anneeEmbauche,Salaire)
+    print(Employe.anciennete())
 
 }
